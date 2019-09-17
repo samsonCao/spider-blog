@@ -104,7 +104,7 @@ export default () => (
                         </div>
                         <div className="sp_card-meta">
                           <div className="sp_card-title">
-                            <Link href={`./detail?id=${item.id}`}  as={process.env.BACKEND_URL + './detail?id=${item.id}`'}>
+                            <Link href={`./detail?id=${item.id}`}>
                               <a href="">{item.cardTitle}</a>
                             </Link>
                           </div>
