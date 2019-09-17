@@ -39,7 +39,7 @@ module.exports = (phase, { defaultConfig }) => {
         "/": { page: "/" },
       }
     },
-    assetPrefix: 'https://samsoncao.github.io/spider-blog/',
+    assetPrefix: process.env.NODE_ENV === "production" ? 'https://samsoncao.github.io/spider-blog/': '',
     lessLoaderOptions: {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
