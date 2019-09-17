@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "builds": [
+    { "pages": "package.json", "use": "@now/next" }
+  ]
+}
