@@ -9,7 +9,7 @@ module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
     return {
-      assetPrefix: process.env.NODE_ENV === 'production' ? '/spider-blog/' : '',
+      assetPrefix: '/spider-blog/',
       // another configuration
     };
   }

@@ -909,18 +909,22 @@
       "static/mb__JxDHizrJa582b9OG4/pages/detail.js": 4,
       "static/mb__JxDHizrJa582b9OG4/pages/index.js": 5,
       "static/mb__JxDHizrJa582b9OG4/pages/_app.js": 6,
-      "static/mb__JxDHizrJa582b9OG4/pages/_error.js": 7
+      "static/mb__JxDHizrJa582b9OG4/pages/_error.js": 7,
+      "static/aU9Gg7X5vjw~4nNyZ0jcU/pages/detail.js": 8,
+      "static/aU9Gg7X5vjw~4nNyZ0jcU/pages/index.js": 9,
+      "static/aU9Gg7X5vjw~4nNyZ0jcU/pages/_app.js": 10,
+      "static/aU9Gg7X5vjw~4nNyZ0jcU/pages/_error.js": 11
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
+      10,
+      11,
       2,
       3,
-      4,
-      5,
-      6,
-      7
+      8,
+      9
     ]
   }
 }
