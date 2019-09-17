@@ -67,24 +67,19 @@
   },
   "chunks": {
     "byName": {
-      "static/3b1~p6T62TG0~J8~3QAoM/pages/_document.js": 0,
-      "static/3b1~p6T62TG0~J8~3QAoM/pages/detail.js": 1,
-      "static/3b1~p6T62TG0~J8~3QAoM/pages/index.js": 2,
-      "static/3b1~p6T62TG0~J8~3QAoM/pages/_app.js": 3,
-      "static/3b1~p6T62TG0~J8~3QAoM/pages/_error.js": 4,
-      "static/0X_vU~NnXPrwq3P9ycaRy/pages/_document.js": 5,
-      "static/0X_vU~NnXPrwq3P9ycaRy/pages/detail.js": 6,
-      "static/0X_vU~NnXPrwq3P9ycaRy/pages/index.js": 7,
-      "static/0X_vU~NnXPrwq3P9ycaRy/pages/_app.js": 8,
-      "static/0X_vU~NnXPrwq3P9ycaRy/pages/_error.js": 9
+      "static/mb__JxDHizrJa582b9OG4/pages/_document.js": 0,
+      "static/mb__JxDHizrJa582b9OG4/pages/detail.js": 1,
+      "static/mb__JxDHizrJa582b9OG4/pages/index.js": 2,
+      "static/mb__JxDHizrJa582b9OG4/pages/_app.js": 3,
+      "static/mb__JxDHizrJa582b9OG4/pages/_error.js": 4
     },
     "bySource": {},
     "usedIds": [
-      5,
-      6,
-      7,
-      8,
-      9
+      0,
+      1,
+      2,
+      3,
+      4
     ]
   }
 }
