@@ -457,6 +457,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
       href: "./detail?id=".concat(item.id),
+      as: process.env.BACKEND_URL + './detail?id=${item.id}`',
       __source: {
         fileName: _jsxFileName,
         lineNumber: 107

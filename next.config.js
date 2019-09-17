@@ -10,11 +10,6 @@ module.exports = (phase, { defaultConfig }) => {
     // Config used to run in production.
     return {
       assetPrefix: process.env.NODE_ENV === 'production' ? 'https://samsonCao.github.io/spider-blog/' : '',
-      exportPathMap: function () {
-        return {
-          "/": { page: "/" },
-        }
-      },
       // another configuration
     };
   }
@@ -39,6 +34,11 @@ module.exports = (phase, { defaultConfig }) => {
   }
 
   return withLess({
+    exportPathMap: function () {
+      return {
+        "/": { page: "/" },
+      }
+    },
     lessLoaderOptions: {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
