@@ -909,18 +909,22 @@
       "static/Fn_GaURCZdMZwzAKRPlmO/pages/detail.js": 4,
       "static/Fn_GaURCZdMZwzAKRPlmO/pages/index.js": 5,
       "static/Fn_GaURCZdMZwzAKRPlmO/pages/_app.js": 6,
-      "static/Fn_GaURCZdMZwzAKRPlmO/pages/_error.js": 7
+      "static/Fn_GaURCZdMZwzAKRPlmO/pages/_error.js": 7,
+      "static/o2B6Ea1tNFj_bjXPvSIIq/pages/detail.js": 8,
+      "static/o2B6Ea1tNFj_bjXPvSIIq/pages/index.js": 9,
+      "static/o2B6Ea1tNFj_bjXPvSIIq/pages/_app.js": 10,
+      "static/o2B6Ea1tNFj_bjXPvSIIq/pages/_error.js": 11
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
+      10,
+      11,
       2,
       3,
-      4,
-      5,
-      6,
-      7
+      8,
+      9
     ]
   }
 }

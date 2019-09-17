@@ -10,6 +10,11 @@ module.exports = (phase, { defaultConfig }) => {
     // Config used to run in production.
     return {
       assetPrefix: process.env.NODE_ENV === 'production' ? 'https://samsonCao.github.io/spider-blog/' : '',
+      exportPathMap: function () {
+        return {
+          "/": { page: "/" },
+        }
+      },
       // another configuration
     };
   }
