@@ -9,7 +9,7 @@ module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
     return {
-      assetPrefix: '/spider-blog/',
+      assetPrefix: 'https://samsoncao.github.io/spider-blog/',
       // another configuration
     };
   }
@@ -39,6 +39,7 @@ module.exports = (phase, { defaultConfig }) => {
         "/": { page: "/" },
       }
     },
+    assetPrefix: 'https://samsoncao.github.io/spider-blog/',
     lessLoaderOptions: {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
