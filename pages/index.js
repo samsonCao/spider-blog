@@ -10,15 +10,15 @@ const { Content } = Layout;
 
 const bannerList = [
   {
-    imgSrc: "/static/images/big-images.jpg",
+    imgSrc: "../static/images/big-images.jpg",
     alt: "xxx"
   },
   {
-    imgSrc: "/static/images/big-images-2.jpg",
+    imgSrc: "../static/images/big-images-2.jpg",
     alt: "xxx"
   },
   {
-    imgSrc: "/static/images/big-images-3.jpg",
+    imgSrc: "../static/images/big-images-3.jpg",
     alt: "xxx"
   }
 ];
@@ -26,7 +26,7 @@ const bannerList = [
 const cardList = [
   {
     imgAlt: "image1",
-    imgSrc: "/static/images/burger1.jpg",
+    imgSrc: "../static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc: "你知道哪些投资少回报高，见效快的赚钱项目？",
     tag: ["seo", "网红"],
@@ -39,7 +39,7 @@ const cardList = [
 for (let i = 0; i < 20; i++) {
   cardList.push({
     imgAlt: "image1",
-    imgSrc: "/static/images/burger1.jpg",
+    imgSrc: "../static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc:
       "你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报,而且...",
@@ -163,7 +163,6 @@ export default () => (
                         >
                           <a href="" className="article-hot-item-link">
                             {itemTopic.articleName}
-                            12312312312312312222222222222222
                           </a>
                         </p>
                       );

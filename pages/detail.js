@@ -13,7 +13,7 @@ const { Content } = Layout;
 const cardList = [
   {
     imgAlt: "image1",
-    imgSrc: "/static/images/burger1.jpg",
+    imgSrc: "../static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc: "你知道哪些投资少回报高，见效快的赚钱项目？",
     tag: ["seo", "网红"],
@@ -26,7 +26,7 @@ const cardList = [
 for (let i = 0; i < 20; i++) {
   cardList.push({
     imgAlt: "image1",
-    imgSrc: "/static/images/burger1.jpg",
+    imgSrc: "../static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc:
       "你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报,而且...",
@@ -68,7 +68,7 @@ export default () => (
             <Content>
               <h1 className='sp_detail_title'>公司业务主要经营小红书  抖音  新闻营销  百度快排 微博 微信公众账号营销</h1>
               <div className="sp_detail_time">发布时间: 2018年07月19日 信息来源：互联网</div>
-              <div className="sp_detail_img"><img src='/static/detail/money.jpeg' alt="赚钱引流"/></div>
+              <div className="sp_detail_img"><img src='../static/detail/money.jpeg' alt="赚钱引流"/></div>
               <div>
                 <div className='sp_detail_text'>
                   <b>抖音推广：</b>
