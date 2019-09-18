@@ -23266,10 +23266,10 @@ var bannerList = [{
   imgSrc: "../static/images/big-images.jpg",
   alt: "xxx"
 }, {
-  imgSrc: "../static/images/big-images-2.jpg",
+  imgSrc: "../static/images/big-images-2.jpeg",
   alt: "xxx"
 }, {
-  imgSrc: "../static/images/big-images-3.jpg",
+  imgSrc: "../static/images/big-images-3.jpeg",
   alt: "xxx"
 }];
 var cardList = [{
