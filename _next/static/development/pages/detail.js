@@ -18285,7 +18285,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
-    src: "/static/detail/money.jpg",
+    src: "/static/detail/money.jpeg",
     alt: "\u8D5A\u94B1\u5F15\u6D41",
     __source: {
       fileName: _jsxFileName,
