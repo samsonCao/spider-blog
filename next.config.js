@@ -45,6 +45,9 @@ module.exports = (phase, { defaultConfig }) => {
     lessLoaderOptions: {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
+    },
+    webpack: (config, options) => {
+      return config
     }
   });
 };
