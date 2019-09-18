@@ -9,11 +9,6 @@ module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
     return {
-      exportPathMap: function() {
-        return {
-          "/": { page: "/" }
-        };
-      },
       assetPrefix: "https://samsoncao.github.io/spider-blog/"
     };
   }
@@ -46,6 +41,11 @@ module.exports = (phase, { defaultConfig }) => {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
     },
+    // exportPathMap: function() {
+    //   return {
+    //     "/": { page: "/" }
+    //   };
+    // },
     webpack: (config, options) => {
       return config
     }
