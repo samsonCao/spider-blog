@@ -1183,7 +1183,7 @@
       "publicPath": "static/chunks/commons.c2b77f44ea812c0b963d.js"
     }
   ],
-  "./../node_modules/process/browser.js": [
+  "./../../../process/browser.js": [
     {
       "id": 145,
       "name": "./node_modules/process/browser.js",
