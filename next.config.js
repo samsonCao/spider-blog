@@ -9,8 +9,12 @@ module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
     return {
-      assetPrefix: 'https://samsoncao.github.io/spider-blog/',
-      // another configuration
+      exportPathMap: function() {
+        return {
+          "/": { page: "/" }
+        };
+      },
+      assetPrefix: "https://samsoncao.github.io/spider-blog/"
     };
   }
 
@@ -34,12 +38,10 @@ module.exports = (phase, { defaultConfig }) => {
   }
 
   return withLess({
-    exportPathMap: function () {
-      return {
-        "/": { page: "/" },
-      }
-    },
-    assetPrefix: process.env.NODE_ENV === "production" ? 'https://samsoncao.github.io/spider-blog/': '',
+    assetPrefix:
+      process.env.NODE_ENV === "production"
+        ? "https://samsoncao.github.io/spider-blog/"
+        : "",
     lessLoaderOptions: {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
