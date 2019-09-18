@@ -8,14 +8,7 @@ const { PHASE_PRODUCTION_SERVER } =
 module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
-    return {
-      assetPrefix: "https://samsoncao.github.io/spider-blog/",
-      exportPathMap: function() {
-        return {
-          "/": { page: "/" }
-        };
-      },
-    };
+    return {};
   }
 
   /* eslint-disable */
@@ -46,21 +39,6 @@ module.exports = (phase, { defaultConfig }) => {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
     },
-    exportPathMap: function() {
-      return {
-        "/": { page: "/" }
-      };
-    },
-    // webpack: (config, { dev }) => {
-    //   if (!dev) {
-    //     config.resolve.alias = {
-    //       'react-dom/server': require.resolve(
-    //         'react-dom/umd/react-dom-server.browser.production.min.js'
-    //       )
-    //     }
-    //   }
-    //   return config
-    // }
   });
 };
 
