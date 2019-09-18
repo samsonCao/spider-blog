@@ -9,7 +9,12 @@ module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
     return {
-      assetPrefix: "https://samsoncao.github.io/spider-blog/"
+      assetPrefix: "https://samsoncao.github.io/spider-blog/",
+      exportPathMap: function() {
+        return {
+          "/": { page: "/" }
+        };
+      },
     };
   }
 
@@ -46,19 +51,16 @@ module.exports = (phase, { defaultConfig }) => {
     //     "/": { page: "/" }
     //   };
     // },
-    // webpack: (config, options) => {
+    // webpack: (config, { dev }) => {
+    //   if (!dev) {
+    //     config.resolve.alias = {
+    //       'react-dom/server': require.resolve(
+    //         'react-dom/umd/react-dom-server.browser.production.min.js'
+    //       )
+    //     }
+    //   }
     //   return config
     // }
-    webpack: (config, { dev }) => {
-      if (!dev) {
-        config.resolve.alias = {
-          'react-dom/server': require.resolve(
-            'react-dom/umd/react-dom-server.browser.production.min.js'
-          )
-        }
-      }
-      return config
-    }
   });
 };
 
