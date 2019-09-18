@@ -23263,18 +23263,18 @@ var _jsxFileName = "/Users/samcao/myWebFIle/spider-blog/pages/index.js";
 
 var Content = antd_lib_layout__WEBPACK_IMPORTED_MODULE_9___default.a.Content;
 var bannerList = [{
-  imgSrc: "/static/images/big-images.jpg",
+  imgSrc: "../static/images/big-images.jpg",
   alt: "xxx"
 }, {
-  imgSrc: "/static/images/big-images-2.jpg",
+  imgSrc: "../static/images/big-images-2.jpg",
   alt: "xxx"
 }, {
-  imgSrc: "/static/images/big-images-3.jpg",
+  imgSrc: "../static/images/big-images-3.jpg",
   alt: "xxx"
 }];
 var cardList = [{
   imgAlt: "image1",
-  imgSrc: "/static/images/burger1.jpg",
+  imgSrc: "../static/images/burger1.jpg",
   cardTitle: "四两拨千斤",
   cardDesc: "你知道哪些投资少回报高，见效快的赚钱项目？",
   tag: ["seo", "网红"],
@@ -23286,7 +23286,7 @@ var cardList = [{
 for (var i = 0; i < 20; i++) {
   cardList.push({
     imgAlt: "image1",
-    imgSrc: "/static/images/burger1.jpg",
+    imgSrc: "../static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc: "你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报,而且...",
     tag: ["seo", "网红"],
@@ -23618,7 +23618,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
           lineNumber: 164
         },
         __self: this
-      }, itemTopic.articleName, "12312312312312312222222222222222"));
+      }, itemTopic.articleName));
     })));
   }))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
     justify: "space-around",
@@ -23628,7 +23628,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 177
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -23640,7 +23640,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183
+      lineNumber: 182
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
@@ -23649,7 +23649,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184
+      lineNumber: 183
     },
     __self: this
   }, "\xA9 2019 \u8718\u86DB\u8BFE\u5802")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -23657,7 +23657,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     xs: 20,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 187
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
@@ -23669,7 +23669,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 188
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -23681,7 +23681,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     type: "wechat",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197
+      lineNumber: 196
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -23693,7 +23693,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     type: "qq",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 201
+      lineNumber: 200
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -23705,7 +23705,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     type: "google",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
+      lineNumber: 204
     },
     __self: this
   })))))));
