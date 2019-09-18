@@ -46,7 +46,17 @@ module.exports = (phase, { defaultConfig }) => {
     //     "/": { page: "/" }
     //   };
     // },
-    webpack: (config, options) => {
+    // webpack: (config, options) => {
+    //   return config
+    // }
+    webpack: (config, { dev }) => {
+      if (!dev) {
+        config.resolve.alias = {
+          'react-dom/server': require.resolve(
+            'react-dom/umd/react-dom-server.browser.production.min.js'
+          )
+        }
+      }
       return config
     }
   });
