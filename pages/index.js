@@ -10,15 +10,15 @@ const { Content } = Layout;
 
 const bannerList = [
   {
-    imgSrc: "../static/images/big-images.jpg",
+    imgSrc: "../../spider-blog/static/images/big-images.jpg",
     alt: "xxx"
   },
   {
-    imgSrc: "../static/images/big-images-2.jpeg",
+    imgSrc: "../../spider-blog/static/images/big-images-2.jpeg",
     alt: "xxx"
   },
   {
-    imgSrc: "../static/images/big-images-3.jpeg",
+    imgSrc: "../../spider-blog/static/images/big-images-3.jpeg",
     alt: "xxx"
   }
 ];
@@ -26,7 +26,7 @@ const bannerList = [
 const cardList = [
   {
     imgAlt: "image1",
-    imgSrc: "../static/images/burger1.jpg",
+    imgSrc: "../../spider-blog/static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc: "你知道哪些投资少回报高，见效快的赚钱项目？",
     tag: ["seo", "网红"],
@@ -39,7 +39,7 @@ const cardList = [
 for (let i = 0; i < 20; i++) {
   cardList.push({
     imgAlt: "image1",
-    imgSrc: "../static/images/burger1.jpg",
+    imgSrc: "/spider-blog/static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc:
       "你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报,而且...",
@@ -145,7 +145,7 @@ export default () => (
                 <p className="contactUs-content-tips">QQ: 1213123</p>
                 <p className="contactUs-content-tips">weixin:12312</p>
                 <div className="contactUs-content-qrCode">
-                  <img src="../static/images/WechatIMG1872.jpeg" alt="" />
+                  <img src="../../spider-blog/static/images/WechatIMG1872.jpeg" alt="" />
                   <p className="contactUs-content-tips">扫描二维码关注我们</p>
                 </div>
               </div>
