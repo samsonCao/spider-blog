@@ -18172,7 +18172,7 @@ var _jsxFileName = "/Users/samcao/myWebFIle/spider-blog/pages/detail.js";
 var Content = antd_lib_layout__WEBPACK_IMPORTED_MODULE_7___default.a.Content;
 var cardList = [{
   imgAlt: "image1",
-  imgSrc: "/static/images/burger1.jpg",
+  imgSrc: "../static/images/burger1.jpg",
   cardTitle: "四两拨千斤",
   cardDesc: "你知道哪些投资少回报高，见效快的赚钱项目？",
   tag: ["seo", "网红"],
@@ -18184,7 +18184,7 @@ var cardList = [{
 for (var i = 0; i < 20; i++) {
   cardList.push({
     imgAlt: "image1",
-    imgSrc: "/static/images/burger1.jpg",
+    imgSrc: "../static/images/burger1.jpg",
     cardTitle: "四两拨千斤",
     cardDesc: "你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报,而且...",
     tag: ["seo", "网红"],
@@ -18285,7 +18285,7 @@ for (var _i2 = 0; _i2 < 8; _i2++) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
-    src: "/static/detail/money.jpeg",
+    src: "../static/detail/money.jpeg",
     alt: "\u8D5A\u94B1\u5F15\u6D41",
     __source: {
       fileName: _jsxFileName,
