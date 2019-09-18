@@ -46,11 +46,11 @@ module.exports = (phase, { defaultConfig }) => {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
     },
-    // exportPathMap: function() {
-    //   return {
-    //     "/": { page: "/" }
-    //   };
-    // },
+    exportPathMap: function() {
+      return {
+        "/": { page: "/" }
+      };
+    },
     // webpack: (config, { dev }) => {
     //   if (!dev) {
     //     config.resolve.alias = {
