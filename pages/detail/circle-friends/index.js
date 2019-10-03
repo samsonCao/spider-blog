@@ -1,6 +1,8 @@
 import React from 'react';
 import { Icon, Row, Col, Layout } from 'antd';
 import SPHeader from '../../../components/Header';
+import RightContactUs from '../../../components/RightContactUs';
+import RightArticleList from '../../../components/RightArticleList';
 import '../../global.less';
 import '../../index.less';
 import './detail.less';
@@ -34,20 +36,6 @@ for (let i = 0; i < 10; i++) {
   });
 }
 
-const articleList = [];
-const topicList = [];
-for (let i = 0; i < 8; i++) {
-  topicList.push({
-    articleName: '年薪百万的成功秘笈年薪百万的成功秘笈',
-    articleLink: 'xxx',
-  });
-}
-for (let i = 0; i < 4; i++) {
-  articleList.push({
-    title: '72小时热门文章',
-    topicList: topicList,
-  });
-}
 // 新建./pages/_app.js文件，重写 App 模块如下所示
 // https://github.com/unicodeveloper/awesome-nextjs
 // seo相关的知识点】
@@ -150,40 +138,8 @@ export default () => (
             </Content>
           </Col>
           <Col span={8} className='sp_main-col-top right-hide'>
-            <div className='sp_main_right_contactUs'>
-              <h4 className='contact_title'>交流合作</h4>
-              <div className='contactUs-content'>
-                <p className='contactUs-content-tips'>联系我们</p>
-                <p className='contactUs-content-tips'>QQ: 1213123</p>
-                <p className='contactUs-content-tips'>weixin:12312</p>
-                <div className='contactUs-content-qrCode'>
-                  <img src='../static/images/WechatIMG1872.jpeg' alt='' />
-                  <p className='contactUs-content-tips'>扫描二维码关注我们</p>
-                </div>
-              </div>
-            </div>
-            {articleList.map((item, index) => {
-              return (
-                <div className='article-hot' key={item.title + index}>
-                  <h3 className='article-hot-title'>{item.title}</h3>
-                  <div className='article-hot-list'>
-                    {item.topicList.map((itemTopic, index) => {
-                      return (
-                        <p
-                          className='article-hot-item ellipse'
-                          key={itemTopic.articleName + index}
-                        >
-                          <a href='' className='article-hot-item-link'>
-                            {itemTopic.articleName}
-                            12312312312312312222222222222222
-                          </a>
-                        </p>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
+            <RightContactUs />
+            <RightArticleList />
           </Col>
         </Row>
         <Row
