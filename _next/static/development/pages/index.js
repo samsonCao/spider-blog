@@ -243,7 +243,7 @@ var RightContactUs = function RightContactUs() {
     },
     __self: this
   }, __jsx("img", {
-    src: "../static/images/WechatIMG1872.jpeg",
+    src: "/static/images/WechatIMG1872.jpeg",
     alt: "",
     __source: {
       fileName: _jsxFileName,
@@ -41935,7 +41935,7 @@ var cardList = [{
 
 /***/ }),
 
-/***/ 0:
+/***/ 11:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsamcao%2FmyWebFIle%2Fspider-blog%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************/
@@ -41958,5 +41958,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[11,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

@@ -243,7 +243,7 @@ var RightContactUs = function RightContactUs() {
     },
     __self: this
   }, __jsx("img", {
-    src: "../static/images/WechatIMG1872.jpeg",
+    src: "/static/images/WechatIMG1872.jpeg",
     alt: "",
     __source: {
       fileName: _jsxFileName,
@@ -37024,7 +37024,7 @@ for (var i = 0; i < 10; i++) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 0:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fdetail%2Fcircle-friends&absolutePagePath=%2FUsers%2Fsamcao%2FmyWebFIle%2Fspider-blog%2Fpages%2Fdetail%2Fcircle-friends%2Findex.js ***!
   \********************************************************************************************************************************************************************************/
@@ -37047,5 +37047,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=circle-friends.js.map
