@@ -141,7 +141,7 @@ export default () => (
                   <p>装修的要解决的问题是建材，施工质量，售后等。</p>
                 </div>
                 <h4 className='sp_detail_text'>看过以后，还是不会？</h4>
-                <p className="sp_detail_text"><a href="">定制我的朋友圈文案，299元/个</a></p>
+                <p className="sp_detail_text"><a className="sp_detail_link-line" href="">定制我的朋友圈文案，299元/个</a></p>
                 <p className='sp_detail_text'>
                   蜘蛛课堂
                   是一家专业的网络营销平台，关注于搜索营销（SEO快排，百度新闻稿件发布，）移动营销（小红书推广，抖音营销）在业界有巨大的影响力.

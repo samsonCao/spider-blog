@@ -35,20 +35,6 @@ const cardList = [
   },
 ];
 
-for (let i = 0; i < 20; i++) {
-  cardList.push({
-    imgAlt: 'image1',
-    imgSrc: '/spider-blog/static/images/burger1.jpg',
-    cardTitle: '四两拨千斤',
-    cardDesc:
-      '你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报高，见效快的赚钱项目你知道哪些投资少回报,而且...',
-    tag: ['seo', '网红'],
-    cardLike: '点赞90',
-    cardDiscuss: '评论77',
-    id: i + 2,
-  });
-}
-
 const articleList = [];
 const topicList = [];
 for (let i = 0; i < 15; i++) {
@@ -57,7 +43,7 @@ for (let i = 0; i < 15; i++) {
     articleLink: 'xxx',
   });
 }
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < 2; i++) {
   articleList.push({
     title: '72小时热门文章',
     topicList: topicList,
@@ -93,26 +79,27 @@ export default () => (
                 return (
                   <Row gutter={16} key={item.cardDesc + index}>
                     <Col span={6} md={24} sm={24} xs={24}>
-                      <div className='sp_card'>
-                        <div className='sp_card-img'>
-                          <img
-                            alt={item.imgAlt}
-                            style={{ width: '100%' }}
-                            src={item.imgSrc}
-                          />
-                        </div>
-                        <div className='sp_card-meta'>
-                          <div className='sp_card-title'>
-                            <Link href={`./detail/circle-friends?id=${item.id}`}>
-                              <a href=''>{item.cardTitle}</a>
-                            </Link>
+                      <Link
+                        href={`./detail/circle-friends?id=${item.id}`}
+                      >
+                        <div className='sp_card'>
+                          <div className='sp_card-img'>
+                            <img
+                              alt={item.imgAlt}
+                              style={{ width: '100%' }}
+                              src={item.imgSrc}
+                            />
                           </div>
-                          <div>
-                            <div className='sp_card_item-desc'>
-                              {item.cardDesc}
+                          <div className='sp_card-meta'>
+                            <div className='sp_card-title'>
+                              <a href=''>{item.cardTitle}</a>
                             </div>
-                            <div className='sp_card_item-tips'>
-                              {item.tag &&
+                            <div>
+                              <div className='sp_card_item-desc'>
+                                {item.cardDesc}
+                              </div>
+                              <div className='sp_card_item-tips'>
+                                {item.tag &&
                                 item.tag.map((item, index) => {
                                   return (
                                     <span
@@ -123,13 +110,15 @@ export default () => (
                                     </span>
                                   );
                                 })}
-                              <div className='sp_card_item-tips-time'>
-                                2019-12-11
+                                <div className='sp_card_item-tips-time'>
+                                  2019-10-03
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+
+                      </Link>
                     </Col>
                   </Row>
                 );
