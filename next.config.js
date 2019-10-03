@@ -45,31 +45,31 @@ module.exports = (phase, { defaultonfig }) => {
       modifyVars: themeVariables // make your antd custom effective
     },
     webpack: (config, { buildId, dev, isServer, defaultLoaders }) => {
-      if (!dev) {
-        config.plugins.push(
-          ...[
-            new BundleAnalyzerPlugin({
-              analyzerMode: 'disabled',
-              // For all options see https://github.com/th0r/webpack-bundle-analyzer#as-plugin
-              generateStatsFile: true,
-              // Will be available at `.next/stats.json`
-              statsFilename: 'stats.json'
-            }),
-            // 代替uglyJsPlugin
-            new TerserPlugin({
-              terserOptions: {
-                ecma: 6,
-                warnings: false,
-                extractComments: false, // remove comment
-                compress: {
-                  drop_console: true // remove console
-                },
-                ie8: false
-              }
-            }),
-          ]);
-        config.devtool = 'source-map';
-      }
+      // if (!dev) {
+      //   config.plugins.push(
+      //     ...[
+      //       new BundleAnalyzerPlugin({
+      //         analyzerMode: 'disabled',
+      //         // For all options see https://github.com/th0r/webpack-bundle-analyzer#as-plugin
+      //         generateStatsFile: true,
+      //         // Will be available at `.next/stats.json`
+      //         statsFilename: 'stats.json'
+      //       }),
+      //       // 代替uglyJsPlugin
+      //       new TerserPlugin({
+      //         terserOptions: {
+      //           ecma: 6,
+      //           warnings: false,
+      //           extractComments: false, // remove comment
+      //           compress: {
+      //             drop_console: true // remove console
+      //           },
+      //           ie8: false
+      //         }
+      //       }),
+      //     ]);
+      //   config.devtool = 'source-map';
+      // }
       return config;
     },
   });
