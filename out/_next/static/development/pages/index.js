@@ -24,19 +24,19 @@ var linkList = [{
   href: '/index',
   title: '首页'
 }, {
-  href: 'xxx',
+  href: '/index',
   title: 'seo文案'
 }, {
-  href: 'xxx',
+  href: '/index',
   title: '信息流文案'
 }, {
-  href: 'xxx',
+  href: '/index',
   title: 'sem文案'
 }, {
-  href: 'xxx',
+  href: '/index',
   title: '落地页文案'
 }, {
-  href: 'xxx',
+  href: '/index',
   title: '子弹头'
 }];
 
