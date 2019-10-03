@@ -91,6 +91,179 @@ var SPHeader = function SPHeader() {
 
 /***/ }),
 
+/***/ "./components/RightArticleList/index.js":
+/*!**********************************************!*\
+  !*** ./components/RightArticleList/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ "./components/RightArticleList/index.less");
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/samcao/myWebFIle/spider-blog/components/RightArticleList/index.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var articleList = [];
+var topicList = [];
+
+for (var i = 0; i < 8; i++) {
+  topicList.push({
+    articleName: '年薪百万的成功秘笈年薪百万的成功秘笈',
+    articleLink: 'xxx'
+  });
+}
+
+for (var _i = 0; _i < 4; _i++) {
+  articleList.push({
+    title: '72小时热门文章',
+    topicList: topicList
+  });
+}
+
+var RightArticleList = function RightArticleList() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, articleList.map(function (item, index) {
+    return __jsx("div", {
+      className: "article-hot",
+      key: item.title + index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("h3", {
+      className: "article-hot-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, item.title), __jsx("div", {
+      className: "article-hot-list",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, item.topicList.map(function (itemTopic, index) {
+      return __jsx("p", {
+        className: "article-hot-item ellipse",
+        key: itemTopic.articleName + index,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, __jsx("a", {
+        href: "",
+        className: "article-hot-item-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, itemTopic.articleName, "12312312312312312222222222222222"));
+    })));
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RightArticleList);
+
+/***/ }),
+
+/***/ "./components/RightContactUs/index.js":
+/*!********************************************!*\
+  !*** ./components/RightContactUs/index.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ "./components/RightContactUs/index.less");
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/samcao/myWebFIle/spider-blog/components/RightContactUs/index.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var RightContactUs = function RightContactUs() {
+  return __jsx("div", {
+    className: "sp_main_right_contactUs",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("h4", {
+    className: "contact_title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "\u4EA4\u6D41\u5408\u4F5C"), __jsx("div", {
+    className: "contactUs-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "contactUs-content-tips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "\u8054\u7CFB\u6211\u4EEC"), __jsx("p", {
+    className: "contactUs-content-tips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "\u5FAE\u4FE1:baozidouya-love"), __jsx("div", {
+    className: "contactUs-content-qrCode",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "../static/images/WechatIMG1872.jpeg",
+    alt: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "contactUs-content-tips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "\u626B\u63CF\u4E8C\u7EF4\u7801\u5173\u6CE8\u6211\u4EEC"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RightContactUs);
+
+/***/ }),
+
 /***/ "./node_modules/@ant-design/colors/lib/generate.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@ant-design/colors/lib/generate.js ***!
@@ -41410,10 +41583,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Header */ "./components/Header/index.js");
-/* harmony import */ var _global_less__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./global.less */ "./pages/global.less");
-/* harmony import */ var _global_less__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_global_less__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./index.less */ "./pages/index.less");
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _components_RightContactUs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/RightContactUs */ "./components/RightContactUs/index.js");
+/* harmony import */ var _components_RightArticleList__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/RightArticleList */ "./components/RightArticleList/index.js");
+/* harmony import */ var _global_less__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./global.less */ "./pages/global.less");
+/* harmony import */ var _global_less__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_global_less__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./index.less */ "./pages/index.less");
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_16__);
 
 
 
@@ -41426,6 +41601,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/samcao/myWebFIle/spider-blog/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
+
+
 
 
 
@@ -41451,60 +41628,43 @@ var cardList = [{
   cardLike: '点赞90',
   cardDiscuss: '评论77',
   id: '1'
-}];
-var articleList = [];
-var topicList = [];
-
-for (var i = 0; i < 15; i++) {
-  topicList.push({
-    articleName: '年薪百万的成功秘笈年薪百万的成功秘笈',
-    articleLink: 'xxx'
-  });
-}
-
-for (var _i = 0; _i < 2; _i++) {
-  articleList.push({
-    title: '72小时热门文章',
-    topicList: topicList
-  });
-} // 新建./pages/_app.js文件，重写 App 模块如下所示
+}]; // 新建./pages/_app.js文件，重写 App 模块如下所示
 // https://github.com/unicodeveloper/awesome-nextjs
 // seo相关的知识点】
 // https://gitee.com/mirrors/next-js 中文说明
 // https://www.jianshu.com/p/d9e5ce4f6404?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
-
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __jsx("div", {
     className: "sp_layout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 47
     },
     __self: this
   }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_9___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 48
     },
     __self: this
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 49
     },
     __self: this
   }), __jsx(Content, {
     className: "sp_main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 51
     },
     __self: this
   }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 52
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -41512,27 +41672,27 @@ for (var _i = 0; _i < 2; _i++) {
     className: "sp_main-col-top",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 53
     },
     __self: this
   }, __jsx(Content, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 54
     },
     __self: this
   }, __jsx("div", {
     className: "sp_carousel_main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 55
     },
     __self: this
   }, __jsx(antd_lib_carousel__WEBPACK_IMPORTED_MODULE_7___default.a, {
     autoplay: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 56
     },
     __self: this
   }, bannerList.map(function (item) {
@@ -41540,7 +41700,7 @@ for (var _i = 0; _i < 2; _i++) {
       key: item.imgSrc,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71
+        lineNumber: 59
       },
       __self: this
     }, __jsx("img", {
@@ -41548,7 +41708,7 @@ for (var _i = 0; _i < 2; _i++) {
       alt: item.alt,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72
+        lineNumber: 60
       },
       __self: this
     }));
@@ -41558,7 +41718,7 @@ for (var _i = 0; _i < 2; _i++) {
       key: item.cardDesc + index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 68
       },
       __self: this
     }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -41568,28 +41728,28 @@ for (var _i = 0; _i < 2; _i++) {
       xs: 24,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 69
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
       href: "./detail/circle-friends?id=".concat(item.id),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82
+        lineNumber: 70
       },
       __self: this
     }, __jsx("div", {
       className: "sp_card",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 73
       },
       __self: this
     }, __jsx("div", {
       className: "sp_card-img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 74
       },
       __self: this
     }, __jsx("img", {
@@ -41600,48 +41760,48 @@ for (var _i = 0; _i < 2; _i++) {
       src: item.imgSrc,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 75
       },
       __self: this
     })), __jsx("div", {
       className: "sp_card-meta",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 81
       },
       __self: this
     }, __jsx("div", {
       className: "sp_card-title",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 82
       },
       __self: this
     }, __jsx("a", {
       href: "",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 83
       },
       __self: this
     }, item.cardTitle)), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 85
       },
       __self: this
     }, __jsx("div", {
       className: "sp_card_item-desc",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 86
       },
       __self: this
     }, item.cardDesc), __jsx("div", {
       className: "sp_card_item-tips",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 89
       },
       __self: this
     }, item.tag && item.tag.map(function (item, index) {
@@ -41650,7 +41810,7 @@ for (var _i = 0; _i < 2; _i++) {
         key: index + item,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 93
         },
         __self: this
       }, item);
@@ -41658,7 +41818,7 @@ for (var _i = 0; _i < 2; _i++) {
       className: "sp_card_item-tips-time",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113
+        lineNumber: 101
       },
       __self: this
     }, "2019-10-03"))))))));
@@ -41667,115 +41827,21 @@ for (var _i = 0; _i < 2; _i++) {
     className: "sp_main-col-top right-hide",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 116
     },
     __self: this
-  }, __jsx("div", {
-    className: "sp_main_right_contactUs",
+  }, __jsx(_components_RightContactUs__WEBPACK_IMPORTED_MODULE_13__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 117
     },
     __self: this
-  }, __jsx("h4", {
-    className: "contact_title",
+  }), __jsx(_components_RightArticleList__WEBPACK_IMPORTED_MODULE_14__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 118
     },
     __self: this
-  }, "\u4EA4\u6D41\u5408\u4F5C"), __jsx("div", {
-    className: "contactUs-content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 131
-    },
-    __self: this
-  }, __jsx("p", {
-    className: "contactUs-content-tips",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132
-    },
-    __self: this
-  }, "\u8054\u7CFB\u6211\u4EEC"), __jsx("p", {
-    className: "contactUs-content-tips",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133
-    },
-    __self: this
-  }, "QQ: 1213123"), __jsx("p", {
-    className: "contactUs-content-tips",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134
-    },
-    __self: this
-  }, "weixin:12312"), __jsx("div", {
-    className: "contactUs-content-qrCode",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135
-    },
-    __self: this
-  }, __jsx("img", {
-    src: "../../spider-blog/static/images/WechatIMG1872.jpeg",
-    alt: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 136
-    },
-    __self: this
-  }), __jsx("p", {
-    className: "contactUs-content-tips",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 140
-    },
-    __self: this
-  }, "\u626B\u63CF\u4E8C\u7EF4\u7801\u5173\u6CE8\u6211\u4EEC")))), articleList.map(function (item, index) {
-    return __jsx("div", {
-      className: "article-hot",
-      key: item.title + index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 146
-      },
-      __self: this
-    }, __jsx("h3", {
-      className: "article-hot-title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 147
-      },
-      __self: this
-    }, item.title), __jsx("div", {
-      className: "article-hot-list",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 148
-      },
-      __self: this
-    }, item.topicList.map(function (itemTopic, index) {
-      return __jsx("p", {
-        className: "article-hot-item ellipse",
-        key: itemTopic.articleName + index,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 151
-        },
-        __self: this
-      }, __jsx("a", {
-        href: "",
-        className: "article-hot-item-link",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 155
-        },
-        __self: this
-      }, itemTopic.articleName));
-    })));
   }))), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
     justify: "space-around",
     type: "flex",
@@ -41784,7 +41850,7 @@ for (var _i = 0; _i < 2; _i++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168
+      lineNumber: 122
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -41796,7 +41862,7 @@ for (var _i = 0; _i < 2; _i++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173
+      lineNumber: 127
     },
     __self: this
   }, __jsx("div", {
@@ -41805,7 +41871,7 @@ for (var _i = 0; _i < 2; _i++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 128
     },
     __self: this
   }, "\xA9 2019 \u8718\u86DB\u8BFE\u5802")), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -41813,7 +41879,7 @@ for (var _i = 0; _i < 2; _i++) {
     xs: 20,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 130
     },
     __self: this
   }, __jsx("div", {
@@ -41825,7 +41891,7 @@ for (var _i = 0; _i < 2; _i++) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 177
+      lineNumber: 131
     },
     __self: this
   }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -41837,7 +41903,7 @@ for (var _i = 0; _i < 2; _i++) {
     type: "wechat",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185
+      lineNumber: 139
     },
     __self: this
   }), __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -41849,7 +41915,7 @@ for (var _i = 0; _i < 2; _i++) {
     type: "qq",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 143
     },
     __self: this
   }), __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -41861,7 +41927,7 @@ for (var _i = 0; _i < 2; _i++) {
     type: "google",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193
+      lineNumber: 147
     },
     __self: this
   })))))));
@@ -41869,7 +41935,7 @@ for (var _i = 0; _i < 2; _i++) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 0:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsamcao%2FmyWebFIle%2Fspider-blog%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************/
@@ -41892,5 +41958,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
