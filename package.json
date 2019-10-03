@@ -38,6 +38,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.14.3",
+    "null-loader": "^3.0.0",
     "prettier": "^1.18.2",
     "terser-webpack-plugin": "^2.1.0",
     "webpack": "^4.35.3",
