@@ -8,7 +8,7 @@ const RightContactUs = () => (
       <p className='contactUs-content-tips'>微信:baozidouya-love</p>
 
       <div className='contactUs-content-qrCode'>
-        <img src='../static/images/WechatIMG1872.jpeg' alt='' />
+        <img src='/static/images/WechatIMG1872.jpeg' alt='' />
         <p className='contactUs-content-tips'>扫描二维码关注我们</p>
       </div>
     </div>
