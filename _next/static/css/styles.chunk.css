@@ -5002,6 +5002,34 @@ html {
   color: #ffffff;
 }
 
+.sp_main_right_contactUs {
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  height: 250px;
+  margin-bottom: 15px;
+}
+.sp_main_right_contactUs .contact_title {
+  height: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  text-align: center;
+  background: #7f573e;
+  font-size: 20px;
+}
+.sp_main_right_contactUs .contactUs-content-tips {
+  padding: 2px 30px;
+  text-align: center;
+}
+.sp_main_right_contactUs .contactUs-content-qrCode {
+  padding: 0 20px;
+  text-align: center;
+}
+.sp_main_right_contactUs .contactUs-content-qrCode img {
+  height: 100px;
+  width: 100px;
+}
+
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
