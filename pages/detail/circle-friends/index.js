@@ -1,8 +1,8 @@
 import React from 'react';
 import { Icon, Row, Col, Layout } from 'antd';
-import SPHeader from '../components/Header';
-import './global.less';
-import './index.less';
+import SPHeader from '../../../components/Header';
+import '../../global.less';
+import '../../index.less';
 import './detail.less';
 
 const { Content } = Layout;
@@ -20,7 +20,7 @@ const cardList = [
   },
 ];
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 10; i++) {
   cardList.push({
     imgAlt: 'image1',
     imgSrc: '../static/images/burger1.jpg',
@@ -36,13 +36,13 @@ for (let i = 0; i < 20; i++) {
 
 const articleList = [];
 const topicList = [];
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 8; i++) {
   topicList.push({
     articleName: '年薪百万的成功秘笈年薪百万的成功秘笈',
     articleLink: 'xxx',
   });
 }
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < 4; i++) {
   articleList.push({
     title: '72小时热门文章',
     topicList: topicList,
@@ -64,46 +64,84 @@ export default () => (
           <Col span={16} className='sp_main-col-top'>
             <Content>
               <h1 className='sp_detail_title'>
-                公司业务主要经营小红书 抖音 新闻营销 百度快排 微博
-                微信公众账号营销
+                学会写朋友圈营销文案，让你的产品多卖100万的转化秘籍
               </h1>
-              <div className='sp_detail_time'>
-                发布时间: 2018年07月19日 信息来源：互联网
+              <div className='sp_detail_tips'>
+                发布时间: 2019年10月03日 信息来源：互联网
               </div>
-              <div className='sp_detail_img'>
-                <img src='../static/detail/money.jpeg' alt='赚钱引流' />
-              </div>
+              <h3 className='sp_detail_title-little'>直接上干货</h3>
+              {/*<div className='sp_detail_img'>*/}
+              {/*  <img src='../static/detail/money.jpeg' alt='赚钱引流' />*/}
+              {/*</div>*/}
               <div>
                 <div className='sp_detail_text'>
-                  <b>抖音推广：</b>
-                  <p>
-                    抖音推广目前是非常火爆的营销方式之一，日活量高达1.5亿人次，很多企业都会选择抖音推广，而且软文课堂的抖音推广价格性价比特别的高.目前我们的红人也特别的多，而且还含有抖音的CPC推广方式
-                  </p>
+                  <p className='sp_detail_text-title'>1. 朋友圈基本设置原则</p>
+                  <p>打造朋友圈的基础营销内容。</p>
+                </div>
+                <div className="sp_detail_text">
+                  <p className='sp_detail_text-title'>名字：</p>
+                  <p>1.	与产品相关。比如：尿布大王、设计师小草、杭州新房咨询等等</p>
+                  <p>2.	使用“真实名字”。 比如：尿布大王-袁远</p>
                 </div>
                 <div className='sp_detail_text'>
-                  <b>小红书推广：</b>
-                  <p>平台都被封了，不说了</p>
+                  <p className='sp_detail_text-title'>头像：</p>
+                  <p>使用个人生活照即可，切忌不要使用明星照片，艺术照。</p>
                 </div>
                 <div className='sp_detail_text'>
-                  <b>微信微博：</b>
-                  <p>价格比较公道可以说全网价格最为优势.可以帮客户代做方案.</p>
+                  <p className='sp_detail_text-title'>封面：</p>
+                  <p>要放客户见证类的图片，增加信任度，展现专业度等，比如：客户送锦旗的合集照片；在正规厂家提货的合照；自己公司的门店前台……</p>
+                </div>
+
+                <div className='sp_detail_text'>
+                  <p className='sp_detail_text-title'>2. 发布具有营销性质的朋友圈</p>
+                  <p>1.	发布个人生活类内容，占比30% 可以展现你的兴趣，你的自拍，你烧的菜，你和你的家人等等生活性的东西。</p>
+                  <p className='sp_detail_tips'>原因：人和人之间感情的建立是从『袒露秘密』开始的，把自己私人的一面展现出来，平常人不愿意被别人看到的一面展示到朋友圈，可以快速建立信任，有了信任转化起来就会轻松很多，至少会减少对你推销行为的抵触感。</p>
                 </div>
                 <div className='sp_detail_text'>
-                  <b>百度快排：</b>
-                  <p>
-                    只要你有网站，想让网站有一个非常不错的排名我们这边都可以做.让网站的权重指数不断的提升，从而促使流量不断上升，让品牌和产品销售不再困难
-                  </p>
+                  <p>2.	有技巧的发布产品相关朋友圈 </p>
+                  <p>牢记这三点：</p>
+                  <p>硬广，已经是过去式了</p>
+                  <p>不要发硬广</p>
+                  <p>如果非要发，偶尔发一次。</p>
                 </div>
                 <div className='sp_detail_text'>
-                  <b>信息流广告：</b>
-                  <p>目前主要运作腾讯朋友圈信息流广告</p>
+                  <b>举个例子：假如你是卖房的，你的朋友圈该怎么发</b>
                 </div>
                 <div className='sp_detail_text'>
-                  <b>新闻通稿营销发布：</b>
-                  <p>
-                    中国网，中华网，等国家知名新闻媒体一稿通发，让企业品牌活跃在各大搜索引擎之上，让负面内容无法占据百度搜索引擎页面
-                  </p>
+                  问题1：他是买房的，还是在买其他东西？
+                  <p>他的确是要购买一个房子。但更看重买了房子后对他生活的改变或者说，能给他带来什么？</p>
+                  <p>1.	中年人，更看重教育。（小学，中学，高中）</p>
+                  <p>2.	青年人，更注重环境。（地铁，高架，噪音，水景）</p>
+                  <p>3.	老年人，更注重养生。（医疗，安静，气候合适，物业服务周到等）</p>
                 </div>
+                <div className='sp_detail_text'>
+                  问题2：他担心什么？
+                  <p>1.	房子烂尾</p>
+                  <p>2.	物业垃圾</p>
+                  <p>3.	绿化太差</p>
+                  <p>4.	价格太贵（如何让他觉得值，而不是单纯的告诉他不买就卖不起了？）</p>
+                </div>
+                <div className='sp_detail_text'>
+                  问题3：如何才能让他放心？
+                  <p>1.	客户见证，xxx喜提一套，房源充足。</p>
+                  <p>2.	客户见证，xxx喜提一套xx平，中间楼层不多了。</p>
+                  <p>3. Xxx号楼，已经盖到xx层。</p>
+                  <p>3.	老年人，更注重养生。（医疗，安静，气候合适，物业服务周到等）</p>
+                </div>
+                <div className='sp_detail_text'>
+                  这些问题，才是你发朋友圈的重点！
+                  当然，特价房的硬广还是要有的，毕竟促销还是很有效的。
+                </div>
+                <div className='sp_detail_text'>
+                  每个行业，文案的内容肯定重点都是不同的。
+                  买纸尿布的要解决的问题，是孩子用了会不会屁股红，
+                  健康不健康等。
+                </div>
+                <div className='sp_detail_text'>
+                  <p>装修的要解决的问题是建材，施工质量，售后等。</p>
+                </div>
+                <h4 className='sp_detail_text'>看过以后，还是不会？</h4>
+                <p className="sp_detail_text"><a href="">定制我的朋友圈文案，299元/个</a></p>
                 <p className='sp_detail_text'>
                   蜘蛛课堂
                   是一家专业的网络营销平台，关注于搜索营销（SEO快排，百度新闻稿件发布，）移动营销（小红书推广，抖音营销）在业界有巨大的影响力.

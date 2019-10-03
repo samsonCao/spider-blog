@@ -2,10 +2,15 @@ const { PHASE_PRODUCTION_SERVER } =
   process.env.NODE_ENV === "development"
     ? {} // We're never in "production server" phase when in development mode
     : !process.env.NOW_REGION
-    ? require("next/constants") // Get values from `next` package when building locally
-    : require("next-server/constants"); // Get values from `next-server` package when building on now v2
+      ? require("next/constants") // Get values from `next` package when building locally
+      : require("next-server/constants"); // Get values from `next-server` package when building on now v2
 
-module.exports = (phase, { defaultConfig }) => {
+
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const TerserPlugin = require('terser-webpack-plugin');
+const { DefinePlugin } = require('webpack');
+
+module.exports = (phase, { defaultonfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     // Config used to run in production.
     return {};
@@ -38,6 +43,34 @@ module.exports = (phase, { defaultConfig }) => {
     lessLoaderOptions: {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
+    },
+    webpack: (config, { buildId, dev, isServer, defaultLoaders }) => {
+      if (!dev) {
+        config.plugins.push(
+          ...[
+            new BundleAnalyzerPlugin({
+              analyzerMode: 'disabled',
+              // For all options see https://github.com/th0r/webpack-bundle-analyzer#as-plugin
+              generateStatsFile: true,
+              // Will be available at `.next/stats.json`
+              statsFilename: 'stats.json'
+            }),
+            // 代替uglyJsPlugin
+            new TerserPlugin({
+              terserOptions: {
+                ecma: 6,
+                warnings: false,
+                extractComments: false, // remove comment
+                compress: {
+                  drop_console: true // remove console
+                },
+                ie8: false
+              }
+            }),
+          ]);
+        config.devtool = 'source-map';
+      }
+      return config;
     },
   });
 };

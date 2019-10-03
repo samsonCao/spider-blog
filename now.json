@@ -1,8 +1,7 @@
 {
-  "name": "spider-blog",
   "version": 2,
+  "name": "spider-blog",
   "builds": [
-    { "src": "next.config.js", "use": "@now/next" },
-    { "src": "*.html", "use": "@now/static" }
+    { "src": "package.json", "use": "@now/next" }
   ]
 }
