@@ -1,12 +1,9 @@
 webpackHotUpdate("styles",{
 
-/***/ "./components/ContactUs/index.less":
-false,
-
-/***/ "./components/RightContactUs/index.less":
-/*!**********************************************!*\
-  !*** ./components/RightContactUs/index.less ***!
-  \**********************************************/
+/***/ "./node_modules/antd/lib/carousel/style/index.less":
+/*!*********************************************************!*\
+  !*** ./node_modules/antd/lib/carousel/style/index.less ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32,7 +29,7 @@ false,
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1570103767745");
+            injectCss(link, link.href.split("?")[0] + "?unix=1570104527287");
           });
       }
     }
@@ -41,4 +38,4 @@ false,
 /***/ })
 
 })
-//# sourceMappingURL=styles.7ae0b0b5d6fdc0fb5b14.hot-update.js.map
+//# sourceMappingURL=styles.3f33e2d54715f0c9e257.hot-update.js.map
