@@ -17,10 +17,10 @@ module.exports = (phase, { defaultonfig }) => {
   }
 
   /* eslint-disable */
-  const withLess = require("@zeit/next-less");
-  const lessToJS = require("less-vars-to-js");
   const fs = require("fs");
   const path = require("path");
+  const withLess = require("@zeit/next-less");
+  const lessToJS = require("less-vars-to-js");
 
   // Where your antd-custom.less file lives
   const themeVariables = lessToJS(
